@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --mode development --open",
-    "dev": "webpack --mode development"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.3",
