@@ -1,5 +1,5 @@
 .body{
-    background-image: url('../img/фон.png');
+    background-image: url('./img/фон.png');
 }
 .productArea{
     max-width: 1320;
@@ -15,7 +15,39 @@
 }
 
 .header{
+    background-color: rgb(255, 166, 0);
+    border-radius: 5%;
     font-family: 'Shizuru', cursive;
+    display: flex;
+    justify-content: space-around;
+    & .card1{
+
+    }
+    & .links{
+        font-weight: 700;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & a{
+            font-family: 'Shizuru', cursive;
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+    & .user{
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            & a{
+                font-weight: 700;
+                font-family: 'Shizuru', cursive;
+                text-decoration: none;
+                color: black;
+            }
+    }
 }
 
 .cards_flex{
@@ -56,6 +88,14 @@
             background: rgb(64,199,129);
             box-shadow: 0 -3px rgb(53,167,110) inset;
             transition: 0.2s;
+        }
+        & .button:hover{
+            background-color: aqua;
+            box-shadow: 0 -3px aqua inset;
+        }
+        & .button:active{
+            background-color: red;
+            box-shadow: 0 -3px  red inset;
         }
     }
 }

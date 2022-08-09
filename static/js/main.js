@@ -1,11 +1,5 @@
-import CardContentMod from '../libraries/CardsContent.js';
-import CardCreateMod from '../libraries/getCardsCreate.js';
-import '../static/index.scss';
-// const path = require('path');
-
-// const jsonLink = path.resolve(__dirname,'packages/product.json');
-// const json = JSON.parse(jsonLink);
-// console.log(json);
+import CardContentMod from './CardsContent.js';
+import CardCreateMod from './getCardsCreate.js';
 
 const random = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -16,7 +10,7 @@ const cardsFlex=document.querySelector('.cards_flex');
 const card = new CardCreateMod();
 const content = new CardContentMod();
 
-const numberCard = 10;
+const numberCard = 20;
 
 for(let i=0;i<numberCard;i++){
     card.CardAdd(cardsFlex,'card');
