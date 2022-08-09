@@ -1,4 +1,4 @@
-
+const color = require('colors')
 const path = require('path');
 const express = require('express');
 const app = express();
@@ -9,8 +9,12 @@ app.get('/', (req, res) => {
 res.sendFile(`${__dirname}/static/index.html`);
 });
 
+app.get('/basket', (req, res) => {
+res.sendFile(`${__dirname}/static/basket.html`);
+});
+
 app.listen(3000, () => {
-    console.log('Application listening on port 3333!');
+    console.log(color.green('Сервер запускается, батенька...'));
 });
 
 // http://localhost:3000

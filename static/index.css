@@ -1,13 +1,13 @@
 @charset "UTF-8";
 .body {
-  background-image: url("../img/фон.png");
+  background-image: url("./img/фон.png");
 }
 
 .productArea {
   max-width: 1320;
   padding: 20px;
   border-radius: 3%;
-  border: 5px solid #fff700;
+  border: 5px solid rgb(255, 247, 0);
   background-color: white;
 }
 
@@ -18,58 +18,76 @@
 }
 
 .header {
-  font-family: 'Shizuru', cursive;
+  background-color: rgb(255, 166, 0);
+  border-radius: 5%;
+  font-family: "Shizuru", cursive;
+  display: flex;
+  justify-content: space-around;
+}
+.header .links {
+  font-weight: 700;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .links a {
+  font-family: "Shizuru", cursive;
+  text-decoration: none;
+  color: black;
+}
+.header .user {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .user a {
+  font-weight: 700;
+  font-family: "Shizuru", cursive;
+  text-decoration: none;
+  color: black;
 }
 
 .cards_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 .cards_flex .card {
   width: 200px;
   height: 450px;
   border: 1px solid black;
   border-radius: 5%;
   margin-top: 20px;
-  background-color: #fff6c4;
+  background-color: rgb(255, 246, 196);
   padding: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .cards_flex .card .p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 .cards_flex .card .img {
-  width: 150px;
+  width: 200px;
   height: 250px;
 }
-
 .cards_flex .card .button {
   font-weight: 700;
   color: white;
   text-decoration: none;
-  padding: 0.8em 1em calc(.8em + 3px);
+  padding: 0.8em 1em calc(0.8em + 3px);
   border-radius: 3px;
-  background: #40c781;
-  -webkit-box-shadow: 0 -3px #35a76e inset;
-          box-shadow: 0 -3px #35a76e inset;
-  -webkit-transition: 0.2s;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
   transition: 0.2s;
 }
-/*# sourceMappingURL=index.css.map */
+.cards_flex .card .button:hover {
+  background-color: aqua;
+  box-shadow: 0 -3px aqua inset;
+}
+.cards_flex .card .button:active {
+  background-color: red;
+  box-shadow: 0 -3px red inset;
+}/*# sourceMappingURL=index.css.map */
